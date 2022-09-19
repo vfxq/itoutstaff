@@ -13,7 +13,6 @@ const themeVariables = lessToJs(fs.readFileSync(path.join(__dirname, './src/styl
 module.exports = {
   entry: {
     main: './src/index.tsx',
-    'pdf.worker': path.join(__dirname, './node_modules/pdfjs-dist/build/pdf.worker.js'),
   },
   output: {
     filename: '[name].bundle.js',
@@ -25,17 +24,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'KinoLime',
+      title: 'ITOutstaff',
       template: path.join(__dirname, 'src', 'index.html')
     }),
     new MiniCssExtractPlugin(),
     new AntdDayjsWebpackPlugin(),
-    new webpack.NormalModuleReplacementPlugin(
-      /^pdfjs-dist$/,
-      resource => {
-          resource.request = path.join(__dirname, './node_modules/pdfjs-dist/webpack');
-      },
-    ),
     new ESLintPlugin()
   ],
   module: {
@@ -81,11 +74,6 @@ module.exports = {
         test: /\.(jpe?g|svg|png|gif|ico|eot|ttf|woff2?)(\?v=\d+\.\d+\.\d+)?$/i,
         type: 'asset/resource',
       },
-      {
-        test: /\.(pdf)$/,
-        use: 'file-loader?name=[path][name].[ext]',
-      }
-      
     ]
   }
 }

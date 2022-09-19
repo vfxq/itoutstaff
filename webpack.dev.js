@@ -21,13 +21,13 @@ const devConfig = mergeWithRules({
   }
 })(common, {
   mode: 'development',
-  devtool: 'eval',
+  devtool: 'eval-cheap-source-map',
   devServer: {
     hot: true,
     https: true,
     // proxy: {
     //   '*': {
-    //     target: 'https://stage.kinolime.com',
+    //     target: 'https://stage.itoutstaff.com',
     //     secure: false,
     //     changeOrigin: true,
     //   },
@@ -50,10 +50,10 @@ const devConfig = mergeWithRules({
     server: {
       type: 'https',
       options: {
-          key: fs.readFileSync(`${certPath}/private.key`),
-          cert: fs.readFileSync(`${certPath}/private.crt`),
-          ca: fs.readFileSync(`${certPath}/private.pem`),
-      },
+        key: fs.readFileSync(`${certPath}/dev.local.key`),
+        cert: fs.readFileSync(`${certPath}/dev.local.crt`),
+        ca: fs.readFileSync(`${certPath}/private.key`),
+    },
     },
   },
   plugins: [
