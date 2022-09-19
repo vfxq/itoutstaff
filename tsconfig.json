@@ -1,0 +1,88 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noImplicitAny": true,
+    "module": "esnext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "useUnknownInCatchVariables": true,
+    "baseUrl": "./",
+    "paths": {
+      "@utils": [
+        "./src/utils"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@consts/*": [
+        "./src/consts/*"
+      ],
+      "@consts": [
+        "./src/consts/"
+      ],
+      "@contexts/*": [
+        "./src/contexts/*"
+      ],
+      "@contexts": [
+        "./src/contexts/"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@components": [
+        "./src/components"
+      ],
+      "@hooks/*": [
+        "./src/hooks/*"
+      ],
+      "@hooks": [
+        "./src/hooks"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@pages": [
+        "./src/pages"
+      ],
+      "@ui-kit/*": [
+        "./src/ui-kit/*"
+      ],
+      "@ui-kit": [
+        "./src/ui-kit"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@assets": [
+        "./src/assets"
+      ],
+      "@styles/*": [
+        "./src/styles/*"
+      ],
+      "@styles": [
+        "./src/styles"
+      ],
+      "@entities/*": [
+        "./src/entities/*"
+      ],
+      "@entities": [
+        "./src/entities"
+      ],
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./src/types",
+    // "dist",
+    ".husky"
+  ]
+}

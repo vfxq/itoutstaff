@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Georgia';
+  src: url('../assets/fonts/georgia/Georgia Regular font.eot');
+  src: url('../assets/fonts/georgia/Georgia Regular font.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/georgia/Georgia Regular font.woff2') format('woff2'),
+       url('../assets/fonts/georgia/Georgia Regular font.woff') format('woff'),
+       url('../assets/fonts/georgia/Georgia Regular font.ttf') format('ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeorgiaBold';
+  src: url('../assets/fonts/georgia/georgia\ bold.ttf') format('ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../assets/fonts/Lato/Lato-Regular.ttf') format('ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  src: url('../assets/fonts/Lato/Lato-Bold.ttf') format('ttf');
+  font-style: normal;
+}
+
+@font-fallback: sans-serif;
+
+@font-georgia-regular: Georgia, @font-fallback;
+@font-georgia-bold: GeorgiaBold, @font-fallback;
+@font-lato-regular: Lato, @font-fallback;
+@font-lato-bold: LatoBold, @font-fallback;
+
+@font-weight-regular: 400;
+@font-weight-semibold: 600;
+@font-weight-bold: 700;

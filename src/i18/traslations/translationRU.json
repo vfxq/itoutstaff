@@ -1,0 +1,19 @@
+{
+  "title": "Заголовок",
+  "Welcome to React": "Welcome to React and react-i18next",
+  "description": {
+    "part1": "Редактировать <1>src/App.js</1> и сохранить с перезагрузкой. Vfxq!++++",
+    "part2": "Перевод на русский"
+  },
+  "menu": {
+    "home": "главная",
+    "about": "о нас",
+    "scripts": "сценарии",
+    "videos": "видео",
+    "blog": "блок"
+  },
+  "auth": {
+    "login": "войти",
+    "createAccount": "зарегистрироваться"
+  }
+}
