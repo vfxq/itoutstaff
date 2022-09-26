@@ -1,0 +1,55 @@
+@import '@styles/palette.less';
+@import '@styles/fonts.less';
+
+.ui-kit-select.ant-select.ant-select-single {
+  &:hover {
+    border-color: @white;
+    border-right-width: 1px;
+  }
+  .ant-select-selector {
+    padding: 5px 11px 5px 26px;
+    border-radius: 50px;
+    border: transparent !important;
+    text-transform: none;
+    background-color: @terracotta;
+    height: 48px;
+    border: 1px solid transparent;
+    font-family: @font-lato-regular;
+    font-size: 15px;
+    line-height: 18px;
+    color: @white;
+    text-align: left;
+    input {
+      height: 48px;
+    }
+    .ant-select-selection-item {
+      font-weight: 600;
+      margin-right: 12px;
+    }
+  }
+
+  .ant-select-arrow {
+    color: @white;
+    opacity: 0.75;
+    right: 26px;
+  }
+  &.ant-select-status-error {
+    &>.ant-select-selector {
+      // background-color: @red1 !important;
+      // border-color: @red1 !important;
+      // box-shadow: 0 0 0 2px @red1;
+    }
+  }
+}
+
+.light > .ui-kit-select.ant-select.ant-select-single {
+  .ant-select-selector {
+    // background: @gray32;
+    color: @black;
+  }
+  .ant-select-arrow {
+    color: @black;
+    opacity: 0.45;
+    right: 16px;
+  }
+}

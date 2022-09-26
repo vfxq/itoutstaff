@@ -1,0 +1,19 @@
+@import '@styles/palette.less';
+@import '@styles/fonts.less';
+
+.header.ant-layout-header {
+  height: 78px;
+  line-height: 78px;
+  background: @terracotta;
+  border-bottom: 2px solid @gray;
+  .ant-menu {
+    background: @terracotta;
+    line-height: 77px;
+    &-horizontal {
+      border-bottom: 2px solid @gray;
+      .header-menu-item .link {
+        color: @white;
+      }
+    }
+  }
+}

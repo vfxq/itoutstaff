@@ -1,15 +1,16 @@
 {
-  "title": "Заголовок",
-  "Welcome to React": "Welcome to React and react-i18next",
-  "description": {
-    "part1": "Редактировать <1>src/App.js</1> и сохранить с перезагрузкой. Vfxq!++++",
-    "part2": "Перевод на русский"
+  "common": {
+    "email": "E-mail",
+    "password": "Password",
+    "approve": "подтвердить",
+    "reject": "отклонить",
+    "prev": "prev",
+    "next": "next"
+  },
+  "exceptions": {
+    "no-date": "Нет данных"
   },
   "menu": {
-    "home": "главная",
-    "about": "о нас",
-    "scripts": "сценарии",
-    "videos": "видео",
-    "blog": "блок"
+    "calc": "калькулятор"
   }
 }

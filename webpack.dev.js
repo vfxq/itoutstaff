@@ -21,7 +21,7 @@ const devConfig = mergeWithRules({
   }
 })(common, {
   mode: 'development',
-  devtool: 'eval-cheap-source-map',
+  devtool: 'inline-source-map',
   devServer: {
     hot: true,
     https: true,

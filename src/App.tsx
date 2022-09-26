@@ -1,6 +1,11 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
+import {
+  BrowserRouter,
+  Routes as ReactRoutes,
+} from 'react-router-dom';
 import { ReactQueryProvider } from '@contexts/ReactQueryProvider';
+import Layout from './components/Layout';
 import { useLocalStorage } from './hooks';
 import { getLocale } from './utils';
 import { en } from './consts';
@@ -13,7 +18,11 @@ const App: React.FC = () => {
   return (
     <ReactQueryProvider>
       <ConfigProvider locale={getLocale(i18nextLng)}>
-        <div>AAAA</div>
+        <BrowserRouter>
+          <Layout>
+            <div>AAAA</div>
+          </Layout>
+        </BrowserRouter>
       </ConfigProvider>
     </ReactQueryProvider>
   );

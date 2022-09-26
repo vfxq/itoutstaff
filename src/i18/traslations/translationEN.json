@@ -9,5 +9,8 @@
   },
   "exceptions": {
     "no-date": "No date Specified"
+  },
+  "menu": {
+    "calc": "calculator"
   }
 }
